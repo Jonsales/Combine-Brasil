@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="loading" id="loading">
+  <head>
+          <meta charset="utf-8">
+          <title>Seletiva - Combine Brasil</title>
+          <meta name="description" content="Pronto pra ingressar no futebol americano? Faça parte desse esporte, começando pela seletiva.">
+          <meta name="keywords" content="Futebol americano, Combine Brasil, esporte, seletiva, atletas, avaliação física, equipes, esportivo, desporto,Touchdown, jardas, rugby, testes físicos, torneio touchdown"/>
+          <meta name="robots" content="index, follow"> 
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+
+          <meta property="og:type" content="website"/>
+          <meta property="og:title" content="Combine Brasil - Descobrindo o melhor do atleta "/>
+          <meta property="og:description" content="Pronto pra ingressar no futebol americano? Faça parte desse esporte, começando pela seletiva. "/>
+          <meta property="og:url" content="http://combinebrasil.com"/>
+          <meta property="og:image" content="../img/og-ima.png"/>
+          <meta property="og:locale" content="pt_BR">
+          <meta name="author" content="Jonathan Marques">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+          <link rel="shortcut icon" href="../img/Icon_combine/combine_logo.png.ico">
+
+          <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+                
+    <link rel="stylesheet" href="../fonts/stylesheet.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/formulario.css">
+        <link rel="stylesheet" href="../css/grid.css">
+        <link rel="stylesheet" href="../css/responsivo.css">
+        <link rel="stylesheet" href="../css/loading.css">
+    <script src="../js/libs/modernizr.custom.45655.js"></script>     
+       
+    </head>
+         <body>
+                  <!-- HEADER -->
+        
+          
+            <section class="formulario_jogadores" id="cadastro">              
+              
+            <div class="container">                 
+             
+                  <form method="post" name="form" id="form" class="formulariophp contato_form grid-14">
+                    
+                    <div class="header_form">
+                        <a href="http://combinebrasil.com" class="logo grid-2" style="float:left;width: 100px;">
+                            <img class="logo_team" id="logo_team" src="" alt="Combine">
+                        </a> 
+                         <a href="http://combinebrasil.com" class="logo grid-2" style="float: right; width: 100px;">
+                             
+                            <img class="logo_form" id="logo_form" src="https://image.ibb.co/bOLthQ/combine_brasil_logotipo.png" alt="Combine">
+                        </a>                    
+                    </div>
+                    
+                    <div class="conteudo" id="conteudo">
+
+                        <h2 class="subtitulo" id="welcome">Olá </h2>
+
+                         
+                        <div id="googleMap" style="width:100%;height:300px;text-align: center;"></div>
+                         <h2 class="title-address" id=address-selective style="text-align: center;font-size: 14xp">Endereço da seletiva: </h2>
+
+                        <br>
+                        <h2 class="subtitulo">Você quer se tornar um grande atleta do futebol americano não é mesmo? <br> Para iniciar sua jornada, comece se inscrevendo para a seletiva no formulário abaixo.</h2>
+                      
+                      <div class="mat-div">
+                        <label for="name" class="mat-label">Qual o seu nome? </label>
+                        <input type="text" class="mat-input validate" id="name" name="name" placeholder="José Antônio da Silva" required>
+                      </div>
+                      
+                      <div class="mat-div">
+                        <label for="birthday" class="mat-label">Data do seu nascimento </label>
+                        <input type="text" class="mat-input validate" id="birthday" name="birthday" placeholder="01/12/1990"  onKeyPress="MascaraData(form.birthday);" maxlength="10" required>
+                      </div>
+                
+                    <div class="div_less">
+                        <div class="mat-div">
+                            <label for="cpf" class="mat-label">CPF </label>
+
+                            <input class="mat-input validate" name="cpf" type="text" id="cpf" size="30"  placeholder="XXX.XXX.XXX-XX" maxlength="14" onKeyPress="MascaraCPF(form.cpf);" required>
+                        </div>  
+                        
+                        <div class="mat-div">
+                            <label for="cep" class="mat-label">Insira seu CEP </label>
+
+                            <input class="mat-input validate" type="text" id="cep" name="cep" id="cep" placeholder="10000-000" maxlength="9" onKeyPress="MascaraCep(form.cep);" required>
+                        </div>                                               
+                    </div>                                             
+                        
+                      <div class="div_less">
+                          <div class="mat-div">
+                      <label for="email" class="mat-label">Seu e-mail </label>
+                           
+                        <input class="mat-input validate" id="email" name="email" type="email"  placeholder="Ex.: Jose_antonio@combine.com" class="validate" required>
+                        </div> 
+                        
+                        <div class="mat-div">
+                          <label for="phoneNumber" class="mat-label">Telefone </label>
+
+                          <input type="text" class="mat-input validate" id="phoneNumber" name="phoneNumber" placeholder="Ex.: (12) 90000-0000" maxlength="15" onKeyPress="MascaraTelefone(form.phoneNumber);" required>
+                        </div>
+                          
+                        <div class="mat-div">
+                          <label for="height" class="mat-label">Sua altura </label>
+
+                          <input type="text" class="mat-input" id="height" name="height" placeholder="Ex.: 1,93 " maxlength="5"  onKeyPress="MascaraAltura(form.height);" required>
+                        </div>
+                        
+                        <div class="mat-div">
+                          <label for="weight" class="mat-label">Peso </label>
+
+                          <input type="text" class="mat-input" id="weight" name="weight" maxlength="6"  placeholder="Ex.: 80,30 " required>
+                        </div>
+                      
+                      </div>
+                      
+                  <label for="praticante" class="mat-label">Você já pratica ou já praticou futebol americano?</label>
+                  <ul><li>
+                    <input type="radio" id="s-option" name="selector">
+                    <label for="s-option">SIM</label>
+
+                    <div class="check"><div class="inside"></div></div>
+                  </li>
+
+                  <li>
+                    <input type="radio" id="t-option" name="selector"> 
+                      <label for="t-option">NÃO</label>
+
+                    <div class="check"><div class="inside"></div></div>
+                    </li></ul>
+                    
+                    <label for="desirablePosition" class="mat-label">Qual posição você pretende jogar ou se vê jogando daqui pra frente? Pode marcar mais de uma opção.</label>
+                      
+                    <ul><li>
+                        <label class="tasks-list-item">
+                        <input type="checkbox" name="desirablePosition" value="Quarterback" class="tasks-list-cb">
+                        <span class="tasks-list-mark"></span>
+                        <span class="tasks-list-desc">Quarterback (QB)</span>
+                      </label>
+                      </li>
+                      <li>
+                        <label class="tasks-list-item">
+                        <input type="checkbox" name="desirablePosition" value="Running-Back" class="tasks-list-cb">
+                        <span class="tasks-list-mark"></span>
+                        <span class="tasks-list-desc">Running Back (RB)</span>
+                      </label>
+                      </li>
+                    
+                      <li>
+                        <label class="tasks-list-item">
+                      <input type="checkbox" name="desirablePosition" value="Wide-Receiver" class="tasks-list-cb">
+                      <span class="tasks-list-mark"></span>
+                      <span class="tasks-list-desc">Wide-Receiver (WR) </span>
+                    </label>
+                      </li> 
+                      
+                      <li>
+                        <label class="tasks-list-item">
+                      <input type="checkbox" name="desirablePosition" value="Tight-End" class="tasks-list-cb">
+                      <span class="tasks-list-mark"></span>
+                      <span class="tasks-list-desc">Tight-End (TE)</span>
+                    </label>
+                      </li> 
+                      
+                      <li>
+                        <label class="tasks-list-item">
+                      <input type="checkbox" name="desirablePosition" value="OffensiveLine" class="tasks-list-cb">
+                      <span class="tasks-list-mark"></span>
+                      <span class="tasks-list-desc">Offensive Line (OL)</span>
+                    </label>
+                      </li> 
+                      
+                      <li>
+                        <label class="tasks-list-item">
+                      <input type="checkbox" name="desirablePosition" value="Linebackers" class="tasks-list-cb">
+                      <span class="tasks-list-mark"></span>
+                      <span class="tasks-list-desc">Linebackers (LB)</span>
+                    </label>
+                      </li> 
+                      
+                      <li>
+                        <label class="tasks-list-item">
+                      <input type="checkbox" name="desirablePosition" value="Cornerback" class="tasks-list-cb">
+                      <span class="tasks-list-mark"></span>
+                      <span class="tasks-list-desc">Cornerback (CB) </span>
+                    </label>
+                      </li> 
+                      
+                      <li>
+                        <label class="tasks-list-item">
+                      <input type="checkbox" name="desirablePosition" value="Safety" class="tasks-list-cb">
+                      <span class="tasks-list-mark"></span>
+                      <span class="tasks-list-desc">Safety (S)</span>
+                    </label>
+                      </li> 
+                        
+                        <li>
+                        <label class="tasks-list-item">
+                      <input type="checkbox" name="desirablePosition" value="Definse Line" class="tasks-list-cb">
+                      <span class="tasks-list-mark"></span>
+                      <span class="tasks-list-desc">Defensive Line (DL)</span>
+                    </label>
+                      </li> 
+                      
+                      <li>
+                        <label class="tasks-list-item">
+                      <input type="checkbox" name="desirablePosition" value="Special Team" class="tasks-list-cb">
+                      <span class="tasks-list-mark"></span>
+                      <span class="tasks-list-desc">Special Team</span>
+                    </label>
+                      </li> 
+                    </ul>
+                      
+                    <div class="termos">
+                      <label for="termos" class="label_termos">Você aceita nossos <a href="Termos_de_responsabilidade.pdf" target="_blank" id="link_term" class="link_term">termos de responsabilidade</a>? </label>
+                      
+                      <input type="checkbox" class="checkbox" name="termsAccepted" onchange="this.setCustomValidity(validity.valueMissing ? 'Please indicate that you accept the Terms and Conditions' : '');" required>
+                      
+                      </div>
+                                        
+                   <button id="submit" name="submit" type="submit" class="btn">Enviar</button>    
+                </div>
+                      
+                       <div class="response" id="response">
+                           <h1>Parabéns, 
+                           <span id="nameAthlete" class="value_response">Nome jogador</span> você acabou de se inscrever para a seletiva do <span id="teamName" class="value_response"> time tal</span></h1> 
+                        
+                        <h2 class="title_helps">Sobre a seletiva...</h2>
+                        
+                        <h2 class="subtitulo">A seletiva acontecerá na data <span class="value_response" id="dateResponse" >00/00/2017</span></h2> 
+                           
+                        <h2 class="subtitulo">no endereço <span class="value_response" id="addressResponse" >local</span></h2> 
+                        
+                        <h2 class="title_helps">Mais informações que você precisará saber antes da seletiva</h2> 
+                        <h2 class="subtitulo value_response" id="noteResponse" >note</h2>
+                        
+                        <h2 class="subtitulo">Enviaremos um e-mail com mais algumas informações para você no email <span class="value_response" id="emailResponse" >email</span> </h2>
+                           
+                        <h2 class="subtitulo">Além disso, você acaba de ganhar <span class="value_response" >30% de desconto</span> nos suplementos Combine Brasil!!!!</h2>
+                           <h2 class="subtitulo">Utilize o cupom <span class="value_response" >SEL30CB</span> em suas compras.</h2>
+                           
+                         <h2 class="subtitulo">Os Suplementos Combine Brasil foram desenvolvidos e pensados para os praticantes do Futebol Americano, e hoje está presente em mais de 90 equipes em todo Brasil. Aprimore a sua capacidade física e prepare-se para a seletiva.</h2>
+                           
+                        <h2 class="subtitulo"></h2>
+                        
+                        <a href="http://www.combinebrasil.com/" target="_blank" class="btn" onclick="window.open('http://www.combinesuplementos.com?cupom=SEL30CB');">Visite nossa loja</a>
+                                            </div>
+                    
+                <div class="footer_form">
+                  
+                  <div class="div_footer grid-5">
+                      <a href="mailto:contato@combinebrasil.com">
+                        <img src="../img/Icon_combine/icon_email.png" alt="Combine"><span>contato@combinebrasil.com</span> </a>
+                    </div>
+                    
+                  <div class="div_footer grid-4">
+                    <a href="https://www.instagram.com/combinebrasil/?hl=pt-br" target="_blank" alt="Instagram">
+                        <img src="../img/Icon_combine/icon-instagram.png" alt="Instagram">
+                        <span>@combinebrasil</span>
+                      </a>
+                      <a href="https://www.facebook.com/combinebrasil/?fref=ts" target="_blank" alt="facebook">
+                        <img src="../img/Icon_combine/icon-facebook.png" alt="facebook">
+                        <span>/combinebrasil</span>
+                      </a>                      
+                      <a href="http://combinebrasil.com" target="_blank">
+                        <img src="../img/Icon_combine/icon-twitter.png" alt="Twitter">
+                        <span>@combinebrasil</span>
+                      </a>
+                    </div>
+                    
+                  <div class="div_footer grid-4">
+                      <a href="http://combinebrasil.com" target="_blank">
+                        <img src="../img/Icon_combine/icon_web.png" alt="email">
+                        <span>www.combinebrasil.com</span>
+                      </a>                 
+                  </div>                  
+                </div> 
+              </form> 
+            </div>
+      </section>
+          
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+            <script>window.jQuery || document.write('<script src="../js/libs/jquery-3.1.1.min.js"><\/script>')</script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhJye_SH1eEODtJrXINXY2A3EO92lYxTo&callback=initMap"></script>
+            <script  src="../js/validation_mask.js"></script>
+            <script src="../js/plugins.js"></script>
+            <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})
+                (window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                    ga('create', 'UA-80600626-1', 'auto');
+                    ga('send', 'pageview');
+            </script>           
+             
+     <script  type="text/javascript">
+          $(document).ready(function() {
+             var address = "", cep ="", rua="", numero = "", bairro="", cidade="", estado=""; 
+             var nameTeam = "";
+             var nameAthlete = "";
+             var noteResponse = "";
+             var addressResponse = "";
+             var dateResponse = "";
+             var emailResponse = "";
+             var lenWidth = 0;
+             var lenHeight = 0;
+             var html = document.getElementsByTagName('html')[0];
+             var dataselective="";
+
+         window.onresize = function(event) {
+                    lenghtScreen();
+                    html.style.width = (lenWidth)+"px";
+                    html.style.height = (lenHeight)+"px";
+                };
+
+         var lenghtScreen = function(){
+
+                        // Gather together the window width, height, and scroll position.
+                        var winWidth = $(window).width(),
+                            winHeight = $(window).height();
+
+                        lenWidth = winWidth;
+                        lenHeight = winHeight;
+                }
+
+        var callLoading = function(){
+                html.className =  html.className = "loading";
+                html.style.width = (lenWidth)+"px";
+                html.style.height = (lenHeight)+"px";
+            }
+
+        var removeLoading = function() {
+                    html.className = html.className.replace(/loading/, '');
+                    html.style.width = (lenWidth)+"px";
+                    html.style.height = (lenHeight)+"px";
+
+            };
+
+        window.onload = function() {
+                lenghtScreen();
+                callLoading();
+                verify_selective();
+            };
+
+        function verify_selective() {
+             var idSelective = window.location.search;
+             var objURL = {};
+
+            idSelective.replace(
+                new RegExp( "([^?=&]+)(=([^&]*))?", "g" ),
+                function( $0, $1, $2, $3 ){
+                    objURL[ $1 ] = $3;
+                }
+            );
+
+            idSelective = objURL["id"];
+            
+            if(idSelective != null || idSelective != undefined)
+                ajaxConnect('http://production-combine-api.herokuapp.com/api/selectives/'+idSelective, 'GET', null, 'returnGetSelective');
+            else{
+                window.alert ("Essa seletiva não existe mais, iremos te redirecionar para a páginca do combine.");
+                window.location.replace("http://combinebrasil.com");
+            }
+            
+        }
+
+        function getTeam(team){
+                ajaxConnect('http://production-combine-api.herokuapp.com/api/teams/'+team, 'GET', null, 'returnGetTeam');
+            }
+          
+        $(form).submit(function(event) {              
+            event.preventDefault();
+            
+            let formData = $(form).serialize();
+            
+              var $inputs = $('form :input');
+
+            // not sure if you wanted this, but I thought I'd add it.
+            // get an associative array of just the values.
+            var values = {};
+            $inputs.each(function() {
+                values[this.name] = $(this).val();
+            });
+              
+            var verifyValue = true;
+                if(document.getElementById('name').value == "")
+                    verifyValue = false;
+              
+              if(!document.getElementById('cep').value == ""){
+                var textCep = document.getElementById('cep');
+                var numCep = textCep.value.length;
+                if(numCep<8 || numCep >9){
+                    textCep.style.color="red";
+                    verifyValue = false;
+                }
+                  else
+                       textCep.style.color="";
+              }
+              else
+                  verifyValue = false;
+              
+              if(!document.getElementById('cpf').value == ""){
+                 var valueText = document.getElementById('cpf');
+                    if(valueText.value.length < 11 || valueText.value.length > 14){
+                        valueText.style.color = "red";
+                        verifyValue = false;
+                    }
+                    else{
+                        var cpf = document.getElementById('cpf').value;
+                        exp = /\.|\-/g
+                        cpf = cpf.toString().replace( exp, "" ); 
+                        var digitoDigitado = eval(cpf.charAt(9)+cpf.charAt(10));
+                        var soma1=0, soma2=0;
+                        var vlr =11;
+
+                        for(i=0;i<9;i++){
+                                soma1+=eval(cpf.charAt(i)*(vlr-1));
+                                soma2+=eval(cpf.charAt(i)*vlr);
+                                vlr--;
+                        }       
+                        soma1 = (((soma1*10)%11)==10 ? 0:((soma1*10)%11));
+                        soma2=(((soma2+(2*soma1))*10)%11);
+
+                        var digitoGerado=(soma1*10)+soma2;
+                        if(digitoGerado!=digitoDigitado){
+                            document.getElementById('cpf').style.color = "red";
+                            verifyValue = false;
+                        }
+                        else{
+                            document.getElementById('cpf').style.color = "";
+                        }
+                    }
+              }
+              else
+                verifyValue = false;
+              
+              if(!document.getElementById('birthday').value == ""){
+                var textCep = document.getElementById('birthday');
+                var numCep = textCep.value.length;
+                if(numCep!=10){
+                    textCep.style.color="red";
+                    verifyValue = false;
+                }
+                  else
+                      textCep.style.color="";
+              }
+              else
+                  verifyValue = false;
+              
+              if( document.getElementById('email').value == "")
+                    verifyValue = false;
+              
+              if(!document.getElementById('height').value == ""){
+                var textCep = document.getElementById('height');
+                var numCep = textCep.value.length;
+                if(numCep<3 || numCep >4){
+                    textCep.style.color="red";
+                    verifyValue = false;
+                }
+                  else
+                       textCep.style.color="";
+              }
+              else
+                  verifyValue = false;
+              
+              if(!document.getElementById('weight').value == ""){
+                var textCep = document.getElementById('weight');
+                var numCep = textCep.value.length;
+                if(numCep<2 || numCep >6){
+                    textCep.style.color="red";
+                    verifyValue = false;
+                }
+                  else
+                       textCep.style.color="";
+              }
+              else
+                  verifyValue = false;
+              
+              if(!document.getElementById('phoneNumber').value == ""){
+                var textCep = document.getElementById('phoneNumber');
+                var numCep = textCep.value.length;
+                if(numCep<10 || numCep >15){
+                    textCep.style.color="red";
+                    verifyValue = false;
+                }
+                  else
+                       textCep.style.color="";
+              }
+              else
+                  verifyValue = false;
+              
+              if(verifyValue == false)
+                  window.alert("Campos invalidos!");
+              
+              else{
+            
+                    nameAthlete = values['name'];
+                    emailResponse = values['email'];
+              
+                    address = values['cep'] +" ("+bairro+" - "+cidade+", "+rua+" - "+estado+")";
+                  
+                   var textCPF = document.getElementById('cpf');
+                    var valueCPF = ""
+                    if(textCPF.value.length < 12){
+                        valueCPF = textCPF.value.substring(0,3)+'.'+textCPF.value.substring(3,6)+'.'+textCPF.value.substring(6,9) +'-'+textCPF.value.substring(9,11);
+                    }
+                    else
+                        valueCPF = document.getElementById('cpf').value;     
+                  
+                  var verifyData = true;
+              
+                    var textData = document.getElementById('birthday');
+                        var dataBirthday = ""
+                    if(textData.value.length < 9){
+                        dataBirthday = textData.value.substring(0,2)+'/'+textData.value.substring(2,4)+'/'+textData.value.substring(4,8);
+                    }
+                    else
+                        dataBirthday = document.getElementById('birthday').value;
+                                      
+                      var day = dataBirthday.substring(0,2);
+                      var month = dataBirthday.substring(3,5);
+                      var year = dataBirthday.substring(6,11);
+
+                          if(day>31)
+                              verifyData =false;
+                          if(month>12 || month == NaN)
+                              verifyData = false;
+                          if (year >=2017)
+                              verifyData = false;
+                  
+                        var height = values['height'].replace(',','');
+                        height = height.replace('.','');
+                        height = height.substring(0,1)+'.'+height.substring(1,2);   
+                        
+                        if(verifyData == true){ 
+                            callLoading();
+                            var birthday = month+"/"+day+"/"+year;  
+                            
+                            data = { 
+                                    name: values['name'], 
+                                    termsAccepted: true, 
+                                    cpf: valueCPF, 
+                                    email:values['email'], 
+                                    phoneNumber: values['phoneNumber'], 
+                                    desirablePosition: values['desirablePosition'], 
+                                    birthday: birthday, 
+                                    height : height.replace(',','.'), 
+                                    weight: values['weight'].replace(',','.'), 
+                                    address: address
+                            };
+                            ajaxConnect('http://production-combine-api.herokuapp.com/api/athletes', 'POST', data, 'returnPostCreateAthleteConnection');
+                        }
+                        else{
+                              window.alert('Data inválida');
+                              document.getElementById("birthday").style.color = "red";
+                          }
+                      }
+            });    
+            
+        function returnGetSelective(isSucess, data){
+            removeLoading();
+             if(isSucess){                     
+              if(data.length==0){
+                  window.alert ("Essa seletiva não existe mais, iremos te redirecionar para a páginca do combine.");
+                  window.location.replace("http://combinebrasil.com");
+              }else{
+                  dataselective = data;
+                  dateResponse = data['date'];
+                  var year =dateResponse[0].substring(0,4);
+                  var month = dateResponse[0].substring(5,7);
+                  var day = dateResponse[0].substring(8,10);
+                  dateResponse = day+"/"+month+"/"+year; 
+                  noteResponse = data['note'];
+                  addressResponse = data['address'];
+                  getTeam(data["team"]);
+              }
+            }
+            else{
+                window.alert ("Essa seletiva não existe mais, iremos te redirecionar para a páginca do combine.");
+                window.location.replace("http://combinebrasil.com");
+            }
+        }
+            
+        function returnGetTeam(isSucess, data){
+            removeLoading();
+            if(isSucess){                
+              if(data.length==0){
+                  document.getElementById("welcome").innerHTML = "Bem vindo!";
+              }
+                else{
+                    resultData = data;
+                    nameTeam = resultData["name"];
+                    dateResponse = dataselective['date'];
+                    var year =dateResponse[0].substring(0,4);
+                    var month = dateResponse[0].substring(5,7);
+                    var day = dateResponse[0].substring(8,10);
+                    var date = day+"/"+month+"/"+year;
+                    var time = dateResponse[0].substring(11,16);
+                    var address = dataselective["address"];
+                    var title = dataselective["title"];
+                    var img = resultData["imageUrl"];
+                    document.getElementById("welcome").innerHTML = "Bem vindo à "+dataselective["title"]+", da equipe <span>"+resultData["name"]+"<br><br>A seletiva acontecerá no dia: "+date+" às "+time;
+                    document.getElementById("address-selective").innerHTML = address;
+                    
+
+                    if(img==null){
+                         document.getElementById("logo_form").display=none; 
+                        img = "https://image.ibb.co/ev8e1a/combine_brasil.png";  
+                    }
+                    else
+                        document.getElementById("logo_team").src=img;
+                    myMap(title, address, img);
+                }//
+ 
+            }
+            else{
+                   document.getElementById("welcome").innerHTML = "Bem vindo!";
+            }
+        }
+
+        function myMap(title ,address, img) {
+          //var img = "https://image.ibb.co/b6jBxF/gators.png"; //endereço da imagem do time
+          var geocoder;
+          var map;
+         // var address = "12246-260 Parque Residencial Aquarius 663";//Endereço (o endereço terá de ser CEP, bairro e numero)
+         // var title = "Seletiva Teste";
+            geocoder = new google.maps.Geocoder();
+            var latlng = new google.maps.LatLng(-21.712554, -48.805477); //Lat e Long do Brasil
+            var myOptions = {
+              zoom: 18,
+              center: latlng,
+              mapTypeControl: true,
+              mapTypeControlOptions: {
+                style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
+              },
+              navigationControl: true,
+              mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            map = new google.maps.Map(document.getElementById("googleMap"), myOptions);
+            if (geocoder) {
+              geocoder.geocode({
+                'address': address
+              }, function(results, status) {
+                if (status == google.maps.GeocoderStatus.OK) {
+                  if (status != google.maps.GeocoderStatus.ZERO_RESULTS) {
+                    map.setCenter(results[0].geometry.location);
+
+                    var infowindow = new google.maps.InfoWindow({
+                      content: '<b>' + title + '</b>',
+                      size: new google.maps.Size(150, 50) // tamanho do mapa
+                    });
+
+                    var marker = new google.maps.Marker({
+                      position: results[0].geometry.location,
+                      map: map,
+                      title: title,
+                      icon: { //Icone da seletiva
+                        url: img,
+                        scaledSize: new google.maps.Size(60, 60), // Redimensiona Icone
+                        origin: new google.maps.Point(0,0),
+                        anchor: new google.maps.Point(0, 0)
+                    },
+                    });
+                    google.maps.event.addListener(marker, 'click', function() {
+                      infowindow.open(map, marker); //Clique no ponto no mapa
+                    });
+
+                  } else {
+                    alert("Sem resultado encontrado");
+                  }
+                } else {
+                  alert("Endereço não encontrado no google Maps: " + status);
+                }
+              });
+            }      
+          }
+            
+        function returnPostCreateAthleteConnection(isSucess, data){
+           if(isSucess){
+                    var id = data["_id"];
+                    cadastra_atleta_seletiva(id);
+                }
+            else{
+                var detail = data["responseJSON"];
+                var detail = detail["detail"]; 
+                if(detail["code"] == 11000){
+                    econtre_atleta(detail);
+                }
+                else{ 
+                    removeLoading();
+                    window.alert ("Houve algum erro ao enviar eu cadastro!");
+                }
+            }
+        }
+            
+        function econtre_atleta(value){
+            var objectAthelte = value["op"];
+            var email = objectAthelte["email"];
+            var cpf = objectAthelte["cpf"];
+            
+            ajaxConnect('http://production-combine-api.herokuapp.com/api/athletes?email='+email, 'GET', null, 'returnGetEncontreAthlete');
+        }
+            
+        function returnGetEncontreAthlete(isSucess, data){
+            if(isSucess){   
+                    if(data.length == 0){ 
+                        encontre_atleta_cpf(cpf); 
+                    }
+                    else{
+                        var resultData = data[0];
+                        emailResponse = resultData["email"];
+                        cadastra_atleta_seletiva(resultData["_id"]); 
+                    }
+                }
+            else{
+                var detail = data["responseJSON"];
+                var detail = detail["detail"]; 
+                if(detail["code"] == 11000){
+                    window.alert ("Erro ao cadastrar, CPF ou E-mail já cadastrado!"); 
+                    removeLoading();
+                }
+                else{ 
+                    removeLoading();
+                    window.alert ("Houve algum erro ao enviar eu cadastro!");
+                }
+            }
+        }
+        
+        function encontre_atleta_cpf(cpf){
+            ajaxConnect('http://production-combine-api.herokuapp.com/api/athletes?cpf='+cpf, 'GET', null, 'returnGetEncontreAtletaCPF');
+        }
+              
+        function returnGetEncontreAtletaCPF(isSucess, data){
+            if(isSucess){   
+                    if(data.length == 0){
+                        removeLoading();
+                        window.alert('Erro ao tentar cadastrar'); 
+                    }
+                    else{
+                        var resultData = data;
+                        cadastra_atleta_seletiva(data["_id"]); 
+                    }
+                }
+              else{
+                  removeLoading();
+                    var detail = data["responseJSON"];
+                    var detail = detail["detail"]; 
+                    if(detail["code"] == 11000)                    
+                        window.alert ("Erro ao cadastrar, CPF ou E-mail já cadastrado!");  
+                    else
+                        window.alert ("Houve algum erro ao enviar eu cadastro!");
+                }
+        }
+            
+        function cadastra_atleta_seletiva(idAthlete) {
+             var idSelective = window.location.search;
+            var objURL = {};
+
+            idSelective.replace(
+                new RegExp( "([^?=&]+)(=([^&]*))?", "g" ),
+                function( $0, $1, $2, $3 ){
+                    objURL[ $1 ] = $3;
+                }
+            );
+            
+            idSelective = objURL["id"];
+            data = { athlete: idAthlete, selective: idSelective, presence:true};
+            ajaxConnect('http://production-combine-api.herokuapp.com/api/selectiveAthletes', 'POST', data, 'returnPostCadastraAtletaSelectiva');
+        }
+              
+        function returnPostCadastraAtletaSelectiva(isSucess, data){
+           if(isSucess){
+                    removeLoading();
+               
+                      var year =dateResponse[0].substring(0,4);
+                      var month = dateResponse[0].substring(5,7);
+                      var day = dateResponse[0].substring(8,10);
+                         var time = dateResponse[0].substring(11,16);
+                      dateResponse = day+"/"+month+"/"+year; 
+                    
+               
+                    document.getElementById('nameAthlete').innerHTML = nameAthlete;
+                    document.getElementById('teamName').innerHTML = nameTeam;
+                    document.getElementById('dateResponse').innerHTML = dateResponse +" às "+time;
+                    document.getElementById('addressResponse').innerHTML = addressResponse;
+                    document.getElementById('noteResponse').innerHTML = noteResponse;
+                    document.getElementById('emailResponse').innerHTML = emailResponse;
+                    document.getElementById('conteudo').style.display = "none";
+                    document.getElementById('response').style.display = "block";
+                    form.reset();
+                }
+            else{
+                removeLoading();
+                var detail = data["responseJSON"];
+                var detail = detail["detail"]; 
+                if(detail["code"] == 11000)
+                    window.alert ("O atleta com esse CPF e E-mail já está cadsatrado na seletiva!");  
+                else 
+                    window.alert ("Houve algum erro ao enviar eu cadastro!");
+            }
+        }
+         
+        function ajaxConnect(url, method, data, request){
+           if(method=='GET')
+               ajaxGetConnection(url, request);
+            else
+                ajaxPostConnection(url, data, request);
+        }
+         
+        function ajaxGetConnection(url, request){
+            $.ajax({
+          url: url,
+          type: 'GET',
+          headers: {
+              'Accept':'application/json',
+              'app-authorization':'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwibmFtZSI6IkF0aGxldGUgRm9ybSIsImlhdCI6MTQ4NjQ2NzI3NX0.Dy_2y2yRvYXp1N4_GylIzse-Mt3zX6O35rvddqKRV_g',
+
+              'authorization':'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjU5OWFmNDk3YjRhNWI4MDAxMTQ2YmE4NyIsIm5hbWUiOiJKb25hdGhhbiBNYXJxdWVzIiwidGltZSI6MTUwMzMyNzQ5MDg2NiwiaWF0IjoxNTAzMzI3NDkwfQ.qmO_AQA9Oy3Ft-zr1Z48_eE6SJWFPgmMdqkgGn3chcs'
+          },
+            dataType:'JSON',
+            success: function(resultData){   
+                if(request=='returnGetSelective')
+                    returnGetSelective(true, resultData);
+                else if(request=='returnGetTeam')
+                    returnGetTeam(true, resultData);
+                else if(request=='returnGetEncontreAthlete')
+                    returnGetEncontreAthlete(true, resultData);
+                else if(request=='returnGetEncontreAtletaCPF')
+                    returnGetEncontreAtletaCPF(true, resultData);
+                
+                
+                },
+            error:function(error){
+                if(request=='returnGetSelective')
+                    returnGetSelective(false, error);
+                else if(request=='returnGetTeam')
+                    returnGetTeam(false, error);
+                else if(request=='returnGetEncontreAthlete')
+                    returnGetEncontreAthlete(false, error);
+                else if(request=='returnGetEncontreAtletaCPF')
+                    returnGetEncontreAtletaCPF(false, error);
+                }
+        }); 
+            
+        }
+        
+        function ajaxPostConnection(url, data, request){
+            $.ajax({
+              url: url,
+              type: 'POST',
+              data: data,
+              headers: {
+                'Accept':'application/json',
+                      'app-authorization':'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwibmFtZSI6IkF0aGxldGUgRm9ybSIsImlhdCI6MTQ4NjQ2NzI3NX0.Dy_2y2yRvYXp1N4_GylIzse-Mt3zX6O35rvddqKRV_g',  
+                      'authorization':'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjU5OWFmNDk3YjRhNWI4MDAxMTQ2YmE4NyIsIm5hbWUiOiJKb25hdGhhbiBNYXJxdWVzIiwidGltZSI6MTUwMzMyNzQ5MDg2NiwiaWF0IjoxNTAzMzI3NDkwfQ.qmO_AQA9Oy3Ft-zr1Z48_eE6SJWFPgmMdqkgGn3chcs'
+                  },
+                dataType:'JSON',
+                success: function(resultData){   
+                    if(request=='returnPostCreateAthleteConnection')
+                        returnPostCreateAthleteConnection(true, resultData);
+                    else if(request=='returnPostCadastraAtletaSelectiva')
+                        returnPostCadastraAtletaSelectiva(true, resultData);
+                    },
+                error:function(error){
+                    if(request=='returnPostCreateAthleteConnection')
+                        returnPostCreateAthleteConnection(false, error);
+                    else if(request=='returnPostCadastraAtletaSelectiva')
+                        returnPostCadastraAtletaSelectiva(false, error);
+                    }
+            }); 
+        }
+                  
+        function limpa_formulário_cep() {
+                    // Limpa valores do formulário de cep.
+                    rua = "";
+                    bairro = "";
+                    cidade ="";
+                    estado = "";
+                }
+            
+        }); 
+         
+         //Quando o campo cep perde o foco.
+        $("#cep").blur(function() {
+
+                    document.getElementById('cep').style.color = '';
+                    //Nova variável "cep" somente com dígitos.
+                    var cep = $(this).val().replace(/\D/g, '');
+
+                    //Verifica se campo cep possui valor informado.
+                    if (cep != "") {
+
+                        //Expressão regular para validar o CEP.
+                        var validacep = /^[0-9]{8}$/;
+
+                        //Valida o formato do CEP.
+                        if(validacep.test(cep)) {
+
+                        
+                            //Consulta o webservice viacep.com.br/
+                            $.getJSON("http://viacep.com.br/ws/"+ cep +"/json/?callback=?", function(dados) {
+
+                                if (!("erro" in dados)) {
+                                    //Atualiza os campos com os valores da consulta.
+                                    rua = dados.logradouro;
+                                    bairro = dados.bairro;
+                                    cidade = dados.localidade;
+                                    estado = dados.uf;
+                                } //end if.
+                                else {
+                                    //CEP pesquisado não foi encontrado.
+                                    limpa_formulário_cep();
+                                    document.getElementById('cep').style.color = 'red';
+                                }
+                            });
+                        } //end if.
+                        else {
+                            //cep é inválido.
+                            limpa_formulário_cep();
+                            document.getElementById('cep').style.color = 'red';                            
+                        }
+                    } //end if.
+                    else {
+                        //cep sem valor, limpa formulário.
+                        limpa_formulário_cep();
+                    }
+                });
+         
+     </script>    
+             
+    </body>
+</html>

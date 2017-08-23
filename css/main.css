@@ -1,0 +1,1006 @@
+html, body{
+    font-family: 'Raleway', sans-serif;
+    color: #444;
+    width: 100%;
+    height: 100%;
+}
+
+p{
+    font-family: 'Helvetica', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.home-navbar{
+    background: transparent;
+    border: none;
+    margin-bottom: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    top: 100px;
+    transition: all .5s ease;
+}
+
+.navbar-right{
+    padding-top: 100px;
+}
+
+.navbar-brand{
+    padding-top: 50px;
+}
+
+.brand2{
+    padding-top: 10px;
+}
+
+.navbar-right2{
+    padding-top: 10px;
+    height: 70px;
+}
+
+.home-navbar .navbar-nav>li>a{
+    color: #fff;
+    font-weight: bold;
+}
+
+.home-navbar2{
+    display: none;
+    background: #fff;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.35);
+    height: 70px;
+}
+
+.navbar-toggle{
+    margin-top: 20px;
+}
+
+.home-navbar2 .navbar-nav>li>a{
+    color: #004071;
+    font-weight: bold;
+}
+
+.main-overlay{
+   background: rgba(0, 64, 113, 0.57);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#home{
+    background: url("../img/bg.jpg") no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.flex-align {
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height: 100%;
+}
+
+#starteam{
+    margin: 50px 0;
+}
+.divider-starteam{
+    margin: 20px 0;
+}
+#starteam .main-btn{
+    border: 2px solid #004071;
+    padding: 20px 40px;
+    font-size: 26px;
+    background: transparent;
+    color: #004071;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    transition: all 0.5s ease;
+}
+
+#starteam .main-btn:hover{
+    border: 2px solid rgba(0, 64, 113, 0.57);
+    color: rgba(0, 64, 113, 0.57);
+    transition: all 0.5s ease;
+}
+
+.main span{
+    color: #ffde00;
+}
+
+.thumbnail{
+    border: none;
+}
+
+.thumbnail img{
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    transition: all 0.5s ease;
+}
+
+.thumbnail:hover img{
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+    transition: all 0.5s ease;
+}
+
+.carousel-control.left{
+    background-image: none;
+    margin-left: -120px;
+    color: #000;
+}
+
+.carousel-control.right{
+    background-image: none;
+    margin-right: -120px;
+    color: #000;
+}
+
+#phone{
+    background: #004071 url("../img/arrow.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px 0;
+}
+
+.phone img{
+    margin-bottom: -80px;
+}
+
+.tag{
+    margin-top: 100px;
+    padding: 10px 20px;
+    background: #fff;
+    color: #000;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.title-app{
+    color: #fff;
+    font-size: 26px;
+    margin: 20px 0;
+}
+
+.title-app:after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 2px;
+    background: #fff;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.description-app{
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+}
+
+#methodology{
+    margin: 200px 0 100px 0;
+}
+
+.text-player{
+    z-index: 1;
+}
+
+.img-player{
+    height: 10px;
+}
+
+.img-player img {
+    margin-top: -180px;
+}
+
+.title{
+    font-size: 22px;
+    color: #004071;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.logo_combine{
+        height: 120px;
+    }
+.description-methodology{
+    font-size: 16px;
+    color: #2f2f2f;
+}
+
+#contact{
+    margin-top: 100px;
+    padding: 100px 0 250px 0;
+    background: url("../img/contato.png") no-repeat 100%;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.btn-contact {
+    width: 100%;
+    color: #Fff;
+    border: none;
+    background: #003d73;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#promotion{
+    background: url("../img/sale.JPG") no-repeat #003d73;
+    background-size: cover;
+    height: 400px;
+}
+
+.main{
+    color: #Fff;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 90px;
+}
+
+.main-btn{
+    border: 2px solid #fff;
+    padding: 20px 40px;
+    font-size: 26px;
+    background: transparent;
+    color: #fff;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.main span{
+    color: #ffde00;
+}
+
+.promo{
+    background: rgba(0, 61, 115, 0.8)
+}
+
+.main-title{
+    background: #003d73;
+    color: #fff;
+    font-size: 48px;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 200px auto 0px auto;
+    font-weight: bold;
+}
+
+.main-description{
+    background: #ffde00;
+    font-size: 36px;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.main-description_athlete{
+    font-size: 26px;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 auto;
+    font-weight: bold;
+    text-align: center;
+}
+
+#footer{
+    background: #003d73;
+    color: #Fff;
+    padding: 20px 0;
+}
+
+.social a{
+    text-decoration: none;
+    color: #Fff;
+}
+
+.social i{
+    font-size: 36px;
+}
+
+#teams{
+    background: rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+    transition: all .5s ease;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.teams{
+    transition: all .5s ease;
+    -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: -webkit-transform 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: transform 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: transform 0.3s cubic-bezier(0.77, 0, 0.175, 1), -webkit-transform 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.teams a img{
+    width: 35px;
+    display: inline-block;
+}
+
+.arrow-teams{
+    position: relative;
+    right: -50%;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+}
+
+#services{
+    padding-bottom: 50px;
+    padding-top: 50px;
+    background: #eae9e9;
+}
+.separator_services{
+    margin: 30px 50px 30px 50px;
+    text-align: center;
+}
+.type_services{
+    display: inline-block;
+    text-align: center;  
+    transition: all .5s ease;
+}
+
+.icon_service{
+    width: 110px;
+}
+
+.text_service{
+    font-size: 18px;
+    color: #000000;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: all .5s ease;
+}
+.around_bg{
+    padding: 30px;
+    border-radius: 100px;
+    background: #003d73;
+    display: inline-block;
+    transition: all .5s ease;
+}
+
+.type_services:hover .around_bg{
+    background: #5083b1;
+    box-shadow: 0px 0px 20px -5px #000;
+    cursor: pointer;
+}
+.text_networking{
+    display:none; 
+    width: 450px;
+    margin-left: -70px;
+}
+
+.text_combine-field{
+    display:none; 
+    width: 450px;
+    margin-left: -70px;
+}
+
+
+.text_supplements{  
+    display:none;
+    width: 450px;
+    margin-left: -70px;
+}
+
+.text_media{
+    display:none;
+    width: 450px;
+    margin-left: -110px;
+}
+.text_info{
+    display: -webkit-inline-box;
+    color: #003d73;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    transition: all .5s ease;
+}
+.apoio{
+    display: inline-block;
+    margin: 0px;
+    text-align: center;
+}
+.img-apoio{
+    width: 80%;
+    padding: 5%;
+    display: inline-block;
+     -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: all 0.5s ease;
+}
+.img-apoio:hover{
+    padding: 0%;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    transition: all 0.5s ease;
+}
+
+.form{
+    transition: all .5s ease;
+}
+.show_response{
+    display: none;
+    transition: all .5s ease;
+}
+.text_response{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-right: 50px;
+    margin-left: 50px;
+    text-align: center;
+    transition: all .5s ease;
+}
+.load_page{
+    text-align: center;
+    width: 100%;
+    display: none;
+    transition: all .5s ease;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);	
+
+#atleta_combine{
+    margin-top: 50px;
+}
+.divider-atleta_combine {
+    margin: 20px 0;
+}
+
+.div_slider{
+    height: 100%;
+    width: 100%;
+}
+
+.img_atleta{
+    margin: 10px;
+}
+
+.bxslider{
+    margin: 2px;
+}
+.atleta{
+    font-size: 36px;
+}
+.bx-wrapper .bx-next {
+    right: -10px;
+}
+.bx-wrapper .bx-prev {
+    left: -10px;
+}
+.bx-viewport{
+    margin-left: 1.5%
+}
+.bxslider img{
+    width: 80%;
+    margin-left: 5%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: all 0.5s ease;
+}
+.bxslider img:hover{
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    transition: all 0.5s ease;
+}
+.bxslider h2{
+    font-size: 24px;
+    color: #004071;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.bxslider h2:after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: #004071;
+    margin: 5px 5px 5px 30px;
+}
+
+.bxslider h3{
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+    margin-left: 8%;
+    margin-top: 0px;
+    text-transform: uppercase;
+}
+
+.bxslider p{
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+    margin-left: 5%;
+    margin-top: 0px;
+    margin-top: 2%;
+}
+.bx-wrapper {
+    -moz-box-shadow: none;
+     -webkit-box-shadow:none; 
+     box-shadow: none; 
+     border: none;
+     background: #fff; 
+}
+#home-branco {
+    background: url(../img/Atletas/home-branco-meneses.png) no-repeat;
+    background-size: cover;
+    background-position: 100% 80%;
+    width: 100%;
+    height: 100%;
+}
+
+#home-amilcar{
+    background: url(../img/Atletas/home-amilcar-neto.png) no-repeat;
+    background-size: cover;
+    background-position: 100% 0%;
+    width: 100%;
+    height: 100%;
+}
+
+#home-durval{
+    background: url(../img/Atletas/durval/home-durval-queiroz_full.jpg) no-repeat;
+    background-size: cover;
+    background-position: 100% 0%;
+    width: 100%;
+    height: 100%;
+}
+.atletas-star-team{
+    text-align: center;
+}
+.divider-atleta-starteam{
+    text-align: center;
+}
+
+.divider-atleta-starteam img{
+    width: 70%;
+    padding: 1%;
+     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    transition: all 0.5s ease;
+}
+.divider-atleta-starteam img:hover{    
+    padding: 0%;
+     -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.divider-atleta-starteam h3{
+    font-family: 'Helvetica', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.title-info{
+    font-size: 16px;
+    font-family: 'Helvetica', sans-serif; 
+    color: #000;
+    font-weight: bold;
+}
+.title-info:after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #000000;
+    margin: 5px 5px 5px 5px;
+}
+.text-info{
+    margin-left: 5px;
+    background: #000;
+    padding: 5px;
+    text-align: end;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Helvetica',sans-serif;
+    font-size: 110%;
+}
+#atleta-inspiration{   
+    background-size: cover;
+    background-position: 100% 100%;
+    width: 100%;
+    height: 540px;
+    max-height: 540px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.branco-background{
+    background: url(../img/Atletas/Branco_menes-1.png) no-repeat;
+}
+
+.amilcar-background{
+    background: url(../img/Atletas/amilcar-neto-1.png) no-repeat;
+}
+
+.durval-background{
+    background: url(../img/Atletas/durval/durval-queiroz-1.png) no-repeat;
+}
+
+
+.text-inspiration{
+    margin-top:10%;
+}
+.title-inspiration{
+    font-size: 28px;
+    font-family: 'Helvetica', sans-serif; 
+    color:#004071;
+    font-weight: bold;
+    width: 200px;
+}
+.title-inspiration:after{
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: #004071;
+    margin: 5px 5px 5px 30px;
+}
+.atleta-inspiration .social{
+    display: inline-flex;
+    padding: 0px;
+}
+.atleta-inspiration .social a{
+    color: #004071;
+    margin-right: 10px;
+}
+.atleta-inspiration .social i{
+    font-size: 26px;
+}
+.atleta-inspiration .social a:hover{
+    color: #5b5b5b;
+}
+.text-history{
+    margin-left: 0px;
+    width: 600px;
+}
+.atleta-history{
+    margin: 80px 0px 0px 0px;
+}
+
+.atleta-history h1{
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;   
+}
+.atleta-history img{
+    display: inline-block;
+    margin-left:10%;
+    margin-top: -20%;
+}
+#atleta-video{
+    width: 100%;
+    background: #000;
+    text-align: center;
+}
+.video-atleta {
+    width: 100%;
+    height: 400px;
+}
+
+.atleta-materias{
+ text-align: center;   
+}
+.divider-atleta-materias{
+    display: inline-block;
+    margin: 0px;
+}
+.divider-atleta-materias img{
+    width: 40%;
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+    transition: all 0.5s ease;    
+}
+
+.divider-atleta-materias img:hover{
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    transition: all 0.5s ease;    
+}
+#nome-atleta-star{
+    display: inline-block;
+}
+.close {
+   display: inline-block;
+  padding: 10px;
+}
+.close a {
+    font-size:24px;
+    color:#000;
+    text-decoration:none;
+    cursor: pointer;
+}
+#modal-default{
+    background: #fff url(../img/img-bg-logo-mobile.png) no-repeat 50%;
+    background-size: cover;
+    background-position: 100% 0%;
+}
+#modal-default p {
+  padding: 0px;
+    line-height: 1.6;
+    width: 60%;
+    margin: 0px;
+}
+    
+#modal-default .separate{
+    width: 560px;
+}
+#modal-default a{
+    color: #000;
+    font-size: 44px;
+    margin-right: 20px;
+}
+#modal-default img{
+    width: 30%;
+    position: absolute;
+    float: right;
+    right: 0%;
+    top: 20px;
+}
+.info-text{
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+}
+/*Tablets*/
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .home-navbar{
+        top: 130px;
+    }
+    .carousel-control.left {
+        margin-left: -100px;
+    }
+    .carousel-control.right{
+        margin-right: -100px;
+    }    
+     .main-title {
+        font-size: 30px;
+        padding: 5px 10px;
+        margin-top: 180px
+    }
+    .main-description {
+        font-size: 24px;
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 0 auto;
+        font-weight: bold;
+    }
+    .icon_service {
+        width: 80px;
+    }    
+    .text_networking{ 
+        width: 350px;
+    }
+
+    .text_combine-field{  
+        width: 350px;
+    }
+
+    .text_supplements{  
+        width: 350px;
+    }
+    .text_media{  
+        width: 350px;
+        
+    }
+    .show_response{
+        margin-left: 0%;
+    }
+    .atleta-history img {
+   visibility: hidden;
+    display: none;
+}
+#modal-default .separate{
+    width: 560px;
+}
+.video-atleta {
+    width: 100%;
+    height: 315px;
+}
+.divider-atleta-materias{
+    margin: 0px;
+    width: 30%;
+    display: inline-block;
+}
+#home-durval{
+    background: url(../img/Atletas/durval/home-durval-queiroz.jpg) no-repeat;
+    background-size: cover;
+    background-position: 0%;
+    width: 100%;
+    height: 122%;
+}
+}
+
+/*Smartphones*/
+@media screen and (max-width: 768px){
+    .navbar-right2 {
+        height: auto;
+        background: #fff;
+    }
+    .carousel-control.left {
+        margin-left: -35px;
+    }
+    .carousel-control.right{
+        margin-right: -35px;
+    }
+    .logo_combine{
+        height: 90px;
+        margin-top: -40px;
+    }
+    .teams a img {
+        width: 22px;
+    }
+    .home-navbar{
+        top: 170px;
+    }
+    .main-title {
+        font-size: 24px;
+        padding: 5px 10px;
+        margin-top: 110px;
+    }
+#starteam .main-btn{
+    padding: 10px 20px;
+    font-size: 18px;
+}
+    .main-description {
+        font-size: 20px;
+        display: inline-block;
+        padding: 5px 10px;
+        margin: 0 auto;
+        font-weight: bold;
+    }
+    #methodology {
+        margin: 80px 0 40px 0;
+    }
+    #services{
+        padding-bottom: 0px;
+    }
+    .icon_service {
+        width: 70px;
+    }
+    .text_networking{ 
+        width: 150%;
+        left: -25%;
+        margin: 0px;
+    }
+
+    .text_combine-field{  
+        width: 150%;
+        left: -25%;;
+        margin: 0px;
+    }
+    
+    .text_supplements{  
+        width: 150%;
+        left: -25%;
+        margin: 0px;
+    }
+    .text_media{  
+        width: 150%;
+        left: -25%;
+        margin: 0px;
+    }
+    
+    #contact {
+        margin-top: 0px;
+        padding-top: 60px;
+    }
+    #phone {
+        background: url(../img/bg_phone_mobile.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding: 20px 15px;
+    }
+    .title-app {
+        font-size: 22px;
+        margin: 10px 0;
+    }
+    
+    .img_load{
+        width: 80px;
+    }
+    .show_response{
+        margin-left: 20%;
+    }
+    .main-description_athlete {
+        font-size: 16px;
+}
+.bxslider h3{
+    font-size: 11px;
+}
+
+    .atletas-star-team{
+        text-align: center; 
+    }
+    .divider-atleta-starteam{
+        margin: 0px;
+        width: 200px;
+        display: inline-block;
+    }
+#atleta-inspiration {
+    background-position: 90% 0%;
+    height: 80%;
+}
+    .amilcar-background{
+       background: url(../img/Atletas/amilcar-neto-1-mob.png) no-repeat; 
+    }
+    .branco-background{
+       background: url(../img/Atletas/Branco_menes-1-mob.png) no-repeat; 
+    }
+    .durval-background{
+        background: url(../img/Atletas/durval/durval-queiroz-1-mob.png) no-repeat;
+}
+.text-inspiration{
+    margin-top: 80px;
+}
+.title-inspiration {
+    font-size: 24px;
+    font-family: 'Helvetica', sans-serif;
+    color: #000;
+}
+    
+.title-inspiration:after {
+    background: #000;
+}
+.atleta-inspiration .social a {
+    color: #000;
+}
+.atleta-history {
+    margin: 0px;
+}
+.text-history {
+    width: 100%;
+}
+.atleta-history img {
+   visibility: hidden;
+    display: none;
+}
+    
+.video-atleta {
+    width: 100%;
+    height: 315px;
+}
+#modal-default .separate{
+    width: 100%;
+}
+    
+.divider-atleta-materias{
+    margin: 0px;
+    width: 40%;
+    display: inline-block;
+}
+.apoio{
+    width: 40%;
+}
+.img-apoio{
+    width: 100%;
+}
+
+#home-durval{
+    background: url(../img/Atletas/durval/home-durval-queiroz.jpg) no-repeat;
+    background-size: cover;
+    background-position: 0%;
+    width: 100%;
+    height: 122%;
+}
+    
+}

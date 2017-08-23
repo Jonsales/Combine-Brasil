@@ -1,0 +1,610 @@
+/*Estilo para tablets*/
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+	.titulo{
+		font-size: 50px;
+	}	
+/*MENU*/
+	.logo-ini{
+	right: 350px;
+	}
+	
+/*INTRODUÇÃO*/
+	.quote-externo {
+		margin-top: 50px;
+	}
+/*SOBRE*/
+	.painel-sobre p{
+		font-size: 18px;
+		color: #000;
+	}
+	.painel-sobre li{
+		font-size: 18px;
+	}
+	
+/*QUEM SOMOS*/
+.figure-baixo{	
+  margin-left: 95px;/* A metade de sua largura. */
+}
+figure.snip0058 {
+		min-width: 200px;
+  		max-width: 240px;
+  		max-height: 220px;
+    	height: 100%;
+		width: 100%;
+	}
+figure.snip0058 figcaption {
+	margin-bottom: -36px;
+	
+}
+figure.snip0058 figcaption h2 {
+	font-size: 14px;
+	padding: 10px 5px;
+	font-weight: 250px;
+}
+figure.snip0058 figcaption p {
+	font-size: 14px;
+}	
+figure.snip0058 figcaption p span {
+  padding: 5px 10px;
+}
+
+figure.snip0058 figcaption h2 .icon-visao, .icon-paixao {
+   padding-top: 0px;
+}
+figure.snip0058 figcaption h2 .icon-missao {
+   padding-top: -5px;
+	padding-bottom: 3px;
+	width: 12%;
+  height: 12%;
+}
+figure.snip0058 figcaption h2 .icon-qualidade {
+   padding-top: 0px; 
+}
+	
+.metodologia p{
+	font-size: 18px;
+}
+.last-figure{
+  margin-left: 170px;
+}
+
+.imagem-servicos .texto-img {
+    font-size: 0.7em;
+    margin-right: 100px;
+    width: 130px;
+    padding: 0px;
+	margin-top: -20px;
+}
+	
+/*FALE CONOSCO*/
+
+.fale-conosco .background p{
+  color: #fff;
+  font-size: 16px;
+  margin: 0px;
+}
+
+.fale-conosco input{  
+    width: 220px;
+	
+}
+/*Footer*/
+
+.footer_redes ul li a {
+	border: 3px solid #fec63e;
+	display: block;
+	padding: 6px;
+
+}
+
+.footer_redes ul li a img{
+	width: 26px;
+	height: 26px;
+}
+	
+
+/*Produtos*/
+
+.produto_item h2{
+	top: -150px;
+	margin-bottom: -56px;
+}
+
+.produto_icone {
+	padding: 41px 0;
+}
+
+.produto_info p{
+	font-size: 14px;
+	line-height: 20px;
+	height: 122px;
+	padding: 20px 30px;
+}
+
+.produto_info ul li {
+	width: 181px;
+	height: 49px;
+}
+	
+.slide_viewer {
+  height: 350px;
+}
+
+.slider img{
+  width: 100%;
+    height: 350px;
+  background-size: cover; 
+}
+.slide {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 20%;
+}	
+	
+footer{
+  padding-left: 0px;
+}
+	
+footer blockquote p:after {
+    margin: 5px 0px 5px 165px;
+  
+}
+	
+.logo_form { 
+  width:120px;
+  right: 80%;
+}
+.logo_team { 
+  width:120px;
+  right: 80%;
+}
+
+
+
+} /* Final do estilo para tablets */
+
+/*Estilo para smartphone*/
+@media only screen and (max-width: 767px) {
+
+    .logo{
+        width: 100px;
+    }
+/*Header*/
+	.container{
+		margin-left: 0px;
+		margin-right: 0px;
+		width: 100%;
+	}
+.mobile-nav {
+    display: block;
+	margin-top: 5px;
+  }  
+.direito ul li, .esquerdo ul li {
+  display: block;
+	margin: 0px;
+	float: right;
+	padding: 5px;
+}
+.header_menu {
+    height: 50px;
+    overflow: hidden;
+  }
+.direito, .esquerdo {
+	display: block;
+	height: 20px;
+	background: #000;
+    margin: auto;
+	float: left;
+	 visibility: hidden;
+  }
+	header{
+		width: 0%;
+	}
+ .header_menu {
+    display: block;
+}
+
+		
+.logo-ini{
+	display: block;
+	float: right;	
+	height: 40%;
+}
+
+/*Introducao*/
+
+.introducao h1 {
+	font-size: 46px;
+}
+	
+.introducao h2 {
+	font-size: 22px;
+	margin 0px 0px 100px 0px; 
+}
+	
+.introducao blockquote{
+	margin-right: 40px;
+	margin-bottom:50px;
+}	
+
+.introducao {
+	margin: 0px;
+	padding-top: 50px;
+	background: url("../img/background-mobile.png") no-repeat center;
+	background-size: cover;
+	height: 580px;
+}
+.titulo{
+	font-size: 26px;
+	margin-top: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.subtitulo{
+    margin-top: 0px;
+	padding-right: 10px;
+	padding-left: 10px;
+	font-size: 16px;
+}
+	
+/*SOBRE*/
+	
+.painel-sobre{
+   padding: 0px;
+}
+
+.painel-sobre h2{
+	font-size: 22px;
+	text-align: center;
+  margin-bottom: 0px;
+}
+.sobre-painel-2 h2{
+	text-align: center;
+	padding-right: 50px;
+}
+	
+.painel-sobre p{
+   font-size: 16px;
+}
+.painel-sobre li{
+ 	font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: .1em;
+}
+	
+/*QUEM-SOMOS*/
+	
+	.quem-somos{
+		background: url("../img/Quem-Somos/background-quem-somos-mobile.jpg") no-repeat center;
+	
+	}
+	
+.quem-somos .texto{
+    font-size: 16px;
+    padding-top: 10px;
+	padding-right: 10px;
+    padding-bottom: 20px;
+    text-indent: 20px;
+}
+.figure-cima{
+	margin-left: 0px;
+}
+.figure-baixo{	
+  margin-left: 90px;/* A metade de sua largura. */
+}
+figure.snip0058 {
+	min-width: 100px;
+	max-width: 160px;
+	max-height: 140px;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+figure.snip0058 figcaption {
+	margin-bottom: -38px;	
+}
+figure.snip0058 figcaption h2 {
+	font-size: 12px;
+	padding: 5px 0px;
+}
+figure.snip0058 figcaption p {
+	font-size: 14px;
+}	
+figure.snip0058 figcaption p span {
+  padding: 5px 5px;
+}
+
+figure.snip0058 figcaption h2 .icon-visao, .icon-paixao {
+   padding-top: 0px;
+}
+figure.snip0058 figcaption h2 .icon-missao {
+   padding-top: -5px;
+	padding-bottom: 3px;
+	width: 12%;
+  height: 12%;
+}
+figure.snip0058 figcaption h2 .icon-qualidade {
+   padding-top: 0px; 
+}
+		
+/*FUNDADORES*/
+	.fundadores{
+		background: url('../img/Os-Fundadores/background-fundadores-mobile.png') no-repeat center;
+	}
+.fundadores .sobre-fundador{
+  padding-right: 10px;
+}
+.div_fundadores{
+  margin-left: 20px; 
+}
+	
+.metodologia p{
+	font-size: 16px;
+	margin-left: 10px;
+}
+.textos-metodologia{
+  background: url("../img/img-bg-logo-mobile.png") no-repeat;
+}
+	
+/*NOSSOS-SERVICOS*/
+	/*metodologias*/
+.nossos-servicos .titulo, .nossos-servicos .subtitulo{
+  margin: 0px;
+  padding: 0px;
+}
+.nossos-servicos .metodologias h2{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: #c2c4c7;
+    font-size: 28px;
+}
+.nossos-servicos .metodologias .imagens-metodologias{
+	margin: 0px;
+  padding: 10px;
+}
+.imagem-metodologia {
+ margin-bottom: 10px;
+  width: 95%;
+  color: #ffffff;
+  text-align: left;
+  font-size: 16px;
+  background-color: #ffffff;
+}
+	
+.last-figure{
+	margin-left: 0px;
+}
+
+.imagem-servicos .texto-img {
+    font-size: 0.7em;
+    margin-right: 100px;
+    width: 130px;
+    padding: 0px;
+	margin-top: -20px;
+}
+	
+.nossos-servicos .servicos .imagens-servicos {
+    margin-left: 0px;
+	margin-right: 10px;
+}
+
+	/*Exercicios e avaliações*/
+	
+.nossos-servicos .exercicios h2{
+   font-size: 28px;
+    margin: 0px;
+	margin-bottom: 10px;
+    padding: 0px;
+    text-align: left;
+}
+.nossos-servicos .item-exercicio{
+	float: left;
+	max-width: 40%;
+}
+.nossos-servicos .exercicios h3:after{
+   width: 120px;
+	margin: 5px 0px 5px 10px;
+}
+	
+.form {
+	padding-right: 0px;
+}
+	
+
+
+
+	
+/*PRODUTOS*/
+
+.slide_viewer {
+  height: 230px;
+}
+
+.slider img{
+  width: 100%;
+    height: 350px;
+  background-size: cover; 
+}
+.slide {
+  display: none;
+  position: absolute;
+  width: 100%;
+    height: 20%;
+}	
+	
+/*FALE CONOSCO*/
+.fale-conosco .background h2{
+  font-size: 22px;
+  padding-bottom: 10px;
+}
+
+.fale-conosco .background .redes-sociais{
+  font-size: 22px;
+  padding-top: 10px;
+}
+
+.fale-conosco .background p{
+  font-size: 16px;
+}
+.fale-conosco .background h3{
+  font-size: 22px;
+  padding-top: 10px;
+}
+.fale-conosco input{  
+    width: 48%;
+    height: 35px;
+	font-size: 14px;
+	
+}
+.fale-conosco .nome , .fale-conosco .telefone{ 
+  margin-right: 5px;
+}
+.fale-conosco textarea{
+   	width: 99%;
+    max-width: 100%;
+	 font-size: 16px;	
+}
+.fale-conosco button{
+  width: 99%;
+  padding: 10px 30px;
+  line-height: 20px;    
+}
+
+footer{
+	padding-left: 0px;	
+}
+	
+footer blockquote{
+  text-align: center;
+padding: 0px;
+  margin: 0px;
+}
+footer blockquote p:after {
+   margin: 5px auto 5px auto;
+  
+}
+	
+footer blockquote p {
+	font-size: 14px; 
+	margin: 0px;
+}
+footer .copyright{
+  	padding-top: 0px;
+	margin: auto 5p auto 5px;
+	text-align: center;
+}
+footer img{
+	max-width: 35%;
+  max-height: 35%;
+  height: 100%;
+  width: 100%;
+	position: relative;
+	left: 110px;
+	padding-left: 40px;
+}
+	
+footer blockquote cite {
+	padding: 0px;
+	margin: 0px;
+}
+
+	
+.modal{
+	top: 50%;
+  left: 55%;
+  width:350px;
+  height: 500px;
+}
+.modal h2{
+  padding: 10px 10px 0px 10px;
+  margin: 0px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #004071;
+  letter-spacing: .1em;
+}
+.modal p{
+  padding: 10px 10px 0px 10px;
+  margin: 0px;
+  font-size: 16px;
+  text-indent: 20px;
+  line-height: 25px;
+}
+
+.header_form {
+  /*width: 50%;*/
+}
+
+.logo_form { 
+      width: 80px;
+    right: 10%;
+}
+.logo_team { 
+ width: 80px;
+  right: 80%;
+}
+.formulario_jogadores {
+    background: none;
+    text-align: left;
+}
+.formulario_jogadores .formulariophp {
+    background: #fff url(../img/logo_bg.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    margin-left: -5px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+    border: none;
+}
+	
+.formulario_jogadores .subtitulo {
+    font-size: 14px;
+    padding-left: 0px; 
+    padding-right: 0px;
+}
+.mat-div {
+    padding: 0px 0 0 0;
+}
+.formulario_jogadores label {
+    font-size: 80%;
+}
+.formulario_jogadores input {
+    height: 30px;
+	font-size: 12px;
+}
+.is-completed .mat-label {
+  font-size: 12px;
+}
+ul li .check {
+    border: 2px solid #AAAAAA;
+    height: 20px;
+    width: 20px;
+}
+ul li .check::before {
+    height: 8px;
+    width: 8px;
+    top: 4px;
+    left: 4px;
+}
+ul li:hover .check {
+  border: 2px solid #004071;
+}
+.formulario_jogadores ul li label {
+    margin: 5px auto;
+}
+input[type=radio]:checked ~ .check {
+  border: 2px solid #004071;
+}
+
+.formulario_jogadores .tasks-list-desc {
+    font-size: 14px;
+}
+.footer_form .div_footer{
+		margin: 0px;
+	}
+.formulario_jogadores h1{
+    font-size: 20px;
+}
+} /* Final do estilo para smartphone */

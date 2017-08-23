@@ -1,0 +1,7 @@
+
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^combinebrasil\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.combinebrasil\.com$
+RewriteRule ^public_html\/web\/?(.*)$ "http\:\/\/www\.combinebrasil\.com\/index\.html$1" [R=301,L]
+
